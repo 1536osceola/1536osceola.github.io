@@ -9,3 +9,4 @@ This is the README file for our repo!
 
 ## Tutorials
 - Flask using python (https://www.digitalocean.com/community/tutorials/how-to-make-a-web-application-using-flask-in-python-3)
+- 75grand (https://github.com/75grand) -- maybe a resource?
