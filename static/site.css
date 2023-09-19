@@ -8,12 +8,41 @@
 
 body {
     font-family: 'Lato', Arial, sans-serif;
+    margin: 0;
 }
 
-.navbar {
+
+/* Navigation Bar */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
     background-color: var(--primary-color);
     position: fixed;
     bottom: 0;
     width: 100%;
-    padding: 20px;
 }
+
+li {
+    float: left;
+    width: 25%;
+}
+
+li a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: var(--secondary-color);
+  }
+
+  li a:hover:not(.active) {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+  }
+  
+  .active {
+    background-color: var(--secondary-color);
+    color: var(--default-text-color)
+  }
