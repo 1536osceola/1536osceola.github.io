@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
         <link rel="stylesheet" href="/static/site.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     </head>
 
     <body>
 
         <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a class="active" href="/pages/request.html">Request</a></li>
-            <li><a href="#shop">Shopping List</a></li>
+            <li><a href="{{url_for('home')}}">Home</a></li>
+            <li><a class="active" href="{{url_for('request')}}">Request</a></li>
+            <li><a href="{{url_for('shop')}}">Shopping List</a></li>
         </ul>
 
 

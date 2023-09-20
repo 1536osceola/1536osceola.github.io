@@ -1,15 +1,10 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="/static/site.css">
-    </head>
+{% extends 'base.html' %}
 
-    <body>
+<body>
 
         <ul>
-            <li><a class="active" href="#home">Home</a></li>
-            <li><a href="/pages/request.html">Request</a></li>
+            <li><a class="active" href="{{url_for('home')}}">Home</a></li>
+            <li><a href="{{url_for('request')}}">Request</a></li>
             <li><a href="#shop">Shopping List</a></li>
         </ul>
 
@@ -20,5 +15,4 @@
 
 
 
-    </body>
-</html>
+</body>
