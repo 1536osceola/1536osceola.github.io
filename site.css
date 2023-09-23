@@ -1,0 +1,57 @@
+:root {
+    --primary-color: #4D6B53;
+    --secondary-color: #E0E0E0;
+    --default-bg-color: white;
+    --default-text-color: #424242;
+    --default-font: "Lato", sans-serif;
+}
+
+body {
+    font-family: 'Lato', Arial, sans-serif;
+    margin: 0;
+}
+
+
+/* Navigation Bar */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--primary-color);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+li {
+    float: left;
+    width: 25%;
+}
+
+li a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: var(--secondary-color);
+  }
+
+  li a:hover:not(.active) {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+  }
+  
+  .active {
+    background-color: var(--secondary-color);
+    color: var(--default-text-color)
+  }
+
+  @media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+    }
+  }
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
